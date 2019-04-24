@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Homepage</title>
+	
+<style type="text/css">
+	
+	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, abbr, acronym, big, font, img, small, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0; padding:0; border:0; outline:0; font-size:100%;font-family:Arial;}
+	body {line-height:normal;}
+	ol, ul {list-style:none;}
+	blockquote, q {quotes:none;}
+	:focus {outline:0;}
+	ins {text-decoration:none;}
+	del {text-decoration:line-through;}
+	table {border-collapse:collapse; border-spacing:0;}
+	
+	body{background:#fff;}
+	html, body{height:100%;}
+	.container{display:table;margin:0 auto 0 auto;width:1100px;position:relative;}
+	.insider{display:table;margin:0 auto 0 auto;width:auto;position:relative;}
+
+	.header{float:left;width:100%;height:auto;padding:10px 0 10px 0;z-index:99999;background:#fff;box-shadow:0 0 5px #000; -webkit-box-shadow:0 0 5px #000;}
+
+	.nav{float:right;margin:0 0 0 0;}
+	.nav .title{display:none;}
+	.nav ul{float:right;margin:0 0 0 0;}
+	.nav ul li{float:left;margin:0 0 0 0;}
+	.nav ul li a{float:left;text-decoration:none;text-align:center;font-family:Arial;font-size:13px;color:#333;font-weight:normal;margin:0 0 0 0;padding:10px 25px 10px 25px;text-transform:uppercase;margin:0 0 0 0;transition:0.5s; -webkit-transition:0.5s;}
+	.nav ul li a:hover{background:#187cc2;color:#fff;border-radius:5px;}
+	
+	.section{float:center;width:100%;padding:80px 0 80px 0;text-align:center;}
+	.section h2{font-family:Arial;font-size:30px;color:#333;font-weight:normal;margin:0 0 30px 0;padding:0 0 0 0;}
+	.section h3{font-family:Arial;font-size:18px;color:#4b4b4b;font-weight:normal;margin:20px 0 0 0;padding:0 0 0 0;}
+	.section h4{font-family:Arial;font-size:11px;color:#909090;font-weight:normal;text-transform:uppercase;margin:0 0 20px 0;padding:0 0 30px 0;}	
+	.section  p{font-family:Arial;font-size:14px;color:#777779;line-height:24px;font-weight:normal;margin:0 0 30px 0;}
+	.section a{text-decoration:none;font-family:Arial;font-size:13px;color:#333;font-weight:normal;text-transform:uppercase;transition:0.5s; -webkit-transition:0.5s;}
+	
+	a.button{float:left;width:145px;height:41px;border:1px solid #11598b;text-align:center;font-family:Arial;font-size:14px;color:#fff;font-weight:normal;text-transform:uppercase;line-height:41px;margin:0 0 0 0;border-radius:5px; -webkit-border-radius:5px;transition:0.5s; -webkit-transition:0.5s;background:#11598b;text-decoration:none;}
+	a.button:hover{text-decoration:none;background:none;border:1px solid #fff;color:#fff;}
+
+	.copyright{font-family:Arialfont-size:14px;color:#a5a5a5;margin:30px 0 0 0;}
+	.copyrights{text-indent:-9999px;height:0;line-height:0;font-size:0;overflow:hidden;}
+	
+</style>	
+
+<script type="text/javascript">
+	window.onscroll=function(){
+		var topScroll =document.body.scrollTop;
+		var menu  = document.getElementById("menu");
+		if(topScroll > 150){
+			menu.style.position = 'fixed';
+			menu.style.top = '0';
+			menu.style.zIndex = '9999';
+		}else{
+			menu.style.position = 'static';
+		}
+	}
+</script>
+	
+</head>
+
+<body>
+	
+	
+	
+	<div class="header"  id="menu">
+	<div class="container">
+		
+		<div class="nav">
+			<div class="title">Menu</div>
+			<ul>
+				<li><a href="#about">ABOUT</a></li>
+				<li><a href="#document">DOCUMENT</a></li>
+				<li><a href="#download">DOWNLOAD</a></li>
+				<li><a href="#contact">CONTACT</a></li>
+			</ul>
+		</div>
+
+	</div>
+	</div>
+
+	
+	<div class="section" id="about">
+	<div class="container" style="background:#9accff;border-radius:10px;margin-top:30px;padding:10px 10px 10px 10px">
+		
+		<h2 style="color:#ffffff;text-align:center">Smartdoc</h2>
+		<p style="color:#ffffff;text-align:center;font-size:15px;">Smart document system is a command-line system for automatically generating HTML files based on user-provided files like srs.txt file or code.py file. And, this project is under development, please wait for updates.</p>
+
+		<div class="insider">
+			<div style="float:left;margin:0 40px 0 0">
+				<a href="#" class="button">Download</a>
+			</div>
+			<div style="float:left;margin:0 0 0 40px">
+				<a href="https://github.com/C-mirrors/SmartDoc" class="button">Learn More</a>
+			</div>
+		</div>
+
+	</div>
+	</div>
+	
+	
+	<div class="section" id="document" style="background:#f8f8fa">
+	<div class="container">
+
+		<h2>Document</h2>
+		<h4>The document about this system.</h4>
+		
+		<h3>README</h3>
+		<a href="http://118.25.96.118/cmy/smartdoc/Smartdoc_srs.txt">Software Requirements Specification</a>
+		<h3>Manual</h3>
+		<a href="#">User Manual Online</a>
+
+	</div>
+	</div>
+	
+	<div class="section" style="background:#f8f8fa">
+	<div class="container">
+		
+		<h2>Development Status</h2>
+		<h4>The development status about this system.</h4>
+		<p>This system has a <a href="https://github.com/C-mirrors/SmartDoc/blob/master/Smartdoc.py">Smartdoc Demo</a> now. But just can read the user given file and output a html page without design and segmentation. </p>
+		
+
+	</div>
+	</div>
+
+
+	<div class="section" style="background:#f8f8fa;border-bottom:1px solid #e7e7e7">
+	<div class="container">
+
+		<h2>Bug Tracker</h2>
+		<h4>The bug tracker about this system.</h4>
+	
+	</div>
+	</div>
+
+	
+
+	<div class="section" id="download" style="border-bottom:1px solid #e7e7e7">
+	<div class="container">
+		
+		<h2>Download</h2>
+		<h4>To get SmartDoc.</h4>
+		
+		<h3>Latest Version</h3>
+		<p>The latest version about this system.</p>
+		<h3>Other Version</h3>
+		<p>The other version about this system.</p>
+
+	</div>
+	</div>
+
+	
+	<div class="section" id="contact" style="border-bottom:1px solid #e7e7e7">
+	<div class="container">
+		
+		<h2>Contact with us</h2>
+		<h3>E-Mail: 374246174@qq.com</h3>
+
+	</div>
+	</div>
+
+	
+	<div class="section">
+	<div class="container">
+		
+		<h3>Smartdoc is Free and Open Source Software licensed under the GPL.</h3>
+		<div class="copyright">Copyright &copy; 2019.CMY All rights reserved.</div>
+
+	</div>
+	</div>
+	
+	
+</body>
+</html>
+
