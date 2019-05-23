@@ -8,7 +8,7 @@ def fileToHtml(filename):
     file.close()
     text = escape(text)
     if filename[-1] == 't':  # 若是srs文件，则添加到code的链接
-        text = txtTopy(text);
+        text = txtTopy(text)
     if filename[-1] == 'y':  # 若是code文件，则添加到srs的链接
         text = pyTotxt(text)
     text = preChange(text)
@@ -43,9 +43,14 @@ def txtTopy(text):
     i = 0
     for line in lines:
         if line != '':
-            lines[i] = '<a href="code.py_htmlpage.html#RQ' + str(i) + '" id="RQ' + str(i) + '">#{see function}' + '</a>\n@' + line
+            lines[i] = '<a href="code.py_htmlpage.html#RQ' + line[line.find('=')+3] + '" id="RQ' + \
+                       line[line.find('=')+3] + '">#{see code}' + '</a>\n@' + line
         i += 1
     text = ''.join(lines)
+    #srs格式美化
+    text = text.replace('[', '\n')
+    text = text.replace(']', '\n')
+    text = text.replace('= ', ':')
     return text
 
 def pyTotxt(text):
