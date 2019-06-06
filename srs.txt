@@ -1,20 +1,22 @@
 @Requirement [id=rq1] [description=Return a list where each element is a word from the file given by user.]
  Rationale  [id=ra1] [description=To generate a word list according the given file, which is used to generate a dictionary to search the word frequency.]
- TestCase   [id=tc] [description=Users input a file using the specified commands, and then the system output a word list from this file.]
+ Rationale  [id=ra1] [description=To generate a word list according the given file, which is used to generate a dictionary to search the word frequency.]
+ TestCase   [id=tc1_1] [description=Users input a file using the specified commands, and then the system output a word list from this file.]
+ TestCase   [id=tc1_2] [description=Users input a file using the specified commands, and then the system output a word list from this file.]
  Priority   [High]
 
 @Requirement [id=rq2] [description=Return a dictionary given list lst.  Each key is an element in the lst.]
  Rationale  [id=ra2] [description=To generate a dictionary according the list lst, which is used to search the word frequency and simplified the search.]
- TestCase   [id=tc] [description=Input a word list, and the system output the dictionary.]
+ TestCase   [id=tc2_1] [description=Input a word list, and the system output the dictionary.]
  Priority   [High]
 
 @Requirement [id=rq3] [description=Return a dictionary where each key is a word both in the file given by users and in the dictionary english_dictionary, and the corresponding value is the frequency of that word.]
  Rationale  [id=ra3] [description=Find words that exist in both the file given by user and the english dictionaries, and count the frequency of the words.]
- TestCase   [id=tc] [description=Input the dictionary from the user given file, output the word frequenct list.]
+ TestCase   [id=tc3_1] [description=Input the dictionary from the user given file, output the word frequenct list.]
  Priority   [Medium]
 
 @Requirement [id=rq4] [description=Return a sorted list of tuples, each tuple containing a key and a value. And that the tuples are order in descending order of the value.]
  Rationale  [id=ra4] [description=Sort word frequency table by word frequency and output.]
- TestCase   [id=tc] [description=Input the file, and output the word frequenct list.]
+ TestCase   [id=tc4_1] [description=Input the file, and output the word frequenct list.]
  Priority   [Low]
 
